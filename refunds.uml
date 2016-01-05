@@ -1,0 +1,10 @@
+@startuml
+Actor Customer
+participant Blackjack as "Blackjack Traders Customer Support"
+Customer -> Amazon: Refund Request
+Amazon -> Blackjack: Amazon send email with subject:\nRefund initiated for\norder XXX-XXXXXXX-XXXXXXX
+Blackjack -> Feedbackz: delete all future automated emails
+Blackjack -> Customer: send refund enquiry email
+Customer --> Blackjack: Customer response
+Blackjack -> Customer: Remediate Customer issue
+@enduml
