@@ -1,0 +1,8 @@
+@startuml
+Actor Customer
+participant Blackjack as "Blackjack Traders Customer Support"
+participant Amazon as "Product listing"
+Customer -> Amazon: Provides Negative Review
+Blackjack --> Amazon: Searches daily for Reviews
+Blackjack -> Customer: Remediate Customer issue
+@enduml
